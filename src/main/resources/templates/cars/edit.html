@@ -21,7 +21,7 @@
             <form method="post"
                   th:action="@{/auto-shop/update}">
                 <div class="form-group">
-                    <label for="brand">autó modósító adatlap</label>
+                    <label for="brand">Autó adatlap szerkesztő</label>
                 </div>
                 <div class="form-group">
                     <label for="brand">ID</label>
@@ -57,12 +57,15 @@
                            th:value="${car.price}"/>
                 </div>
 
-                <button class="btn btn-primary"
+                <button
+                        class="btn btn-primary"
                         type="submit">Módosít
                 </button>
-                <a th:href="@{/cars}"
+
+                <a th:href="@{/auto-shop}"
                    class="btn btn-secondary"
                    type="submit">Mégsem</a>
+
             </form>
         </div>
     </div>

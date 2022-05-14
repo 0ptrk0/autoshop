@@ -19,7 +19,7 @@
 
   <a th:href="@{/auto-shop/create}"
      type="button"
-     class="btn btn-info">Új autók hozzáadása</a>
+     class="btn btn-info">Új autó hozzáadása</a>
 
   <table class="table table-striped pt-5">
     <caption>Autók listája</caption>
@@ -43,6 +43,7 @@
         <a th:href="@{'/auto-shop/' + ${car.id}}"
            type="button"
            class="btn btn-warning">Szerkesztés</a>
+
         <a th:href="@{'/auto-shop/' + ${car.id} +  '/delete'}"
            type="button"
            class="btn btn-danger">Törlés</a>
