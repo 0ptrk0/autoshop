@@ -10,12 +10,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
-@RequestMapping("/auto-shop")
+@RequestMapping("auto-shop")
 public class CarController {
 
-    private static final String CAR_LIST_TEMPLATE_NAME = "autoshop/list";
-    private static final String CAR_EDIT_TEMPLATE_NAME = "autoshop/edit";
-    private static final String CAR_ATTRIBUTE_NAME = "autoshop";
+    private static final String CAR_LIST_TEMPLATE_NAME = "cars/list";
+    private static final String CAR_EDIT_TEMPLATE_NAME = "cars/edit";
+    private static final String CAR_ATTRIBUTE_NAME = "car";
 
     private final CarService carService;
 
@@ -49,7 +49,7 @@ public class CarController {
 
     @GetMapping("/create")
     public String createCarForm(final Model model) {
-        return "car/create";
+        return "cars/create";
     }
 
     @PostMapping("/create")
