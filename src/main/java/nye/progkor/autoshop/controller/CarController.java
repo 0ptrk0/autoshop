@@ -10,12 +10,12 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 @Controller
-@RequestMapping("/cars")
+@RequestMapping("/auto-shop")
 public class CarController {
 
-    private static final String CAR_LIST_TEMPLATE_NAME = "car/list";
-    private static final String CAR_EDIT_TEMPLATE_NAME = "car/edit";
-    private static final String CAR_ATTRIBUTE_NAME = "car";
+    private static final String CAR_LIST_TEMPLATE_NAME = "autoshop/list";
+    private static final String CAR_EDIT_TEMPLATE_NAME = "autoshop/edit";
+    private static final String CAR_ATTRIBUTE_NAME = "autoshop";
 
     private final CarService carService;
 
