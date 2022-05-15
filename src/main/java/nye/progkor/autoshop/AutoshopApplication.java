@@ -9,5 +9,4 @@ public class AutoshopApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(AutoshopApplication.class, args);
 	}
-
 }
