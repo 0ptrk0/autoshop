@@ -17,9 +17,9 @@ public class CarServiceImpl  implements CarService {
 
     @Autowired
     public CarServiceImpl() {
-        dataBase.add(new Car(1L, "Lamborghini", "Aventador",825000));
+        dataBase.add(new Car(1L, "Lamborghini", "Aventador",826000));
         dataBase.add(new Car(2L, "Nissan", "R34",70000 ));
-        dataBase.add(new Car(3L, "Toyota", "Supra",49000));
+        dataBase.add(new Car(3L, "Toyota", "Supra",59000));
     }
     public CarServiceImpl(final List<Car> cars) {
         dataBase.addAll(cars);
